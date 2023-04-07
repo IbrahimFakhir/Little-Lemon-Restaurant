@@ -1,4 +1,8 @@
 import './App.css';
+import './components/Header'
+import './components/Nav'
+import './components/Main'
+import './components/Header'
 
 function App() {
 	return (
