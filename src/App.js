@@ -1,15 +1,13 @@
 import './App.css';
-import './components/Header'
-import './components/Nav'
-import './components/Main'
-import './components/Header'
+import Header from './components/Header'
+import Nav from './components/Nav'
+import Main from './components/Main'
+import Footer from './components/Footer'
 
 function App() {
 	return (
 		<>
-			<header>
-
-			</header>
+			<Header/>
 			<nav>
 
 			</nav>
@@ -17,7 +15,7 @@ function App() {
 
 			</main>
 			<footer>
-				
+
 			</footer>
 		</>
 	);
