@@ -9,9 +9,7 @@ function App() {
 		<>
 			<Header/>
 			<Nav/>
-			<main>
-
-			</main>
+			<Main/>
 			<footer>
 
 			</footer>
