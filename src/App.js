@@ -1,13 +1,25 @@
-import './App.css';
-import Header from './components/site-layout/Header'
-import Footer from './components/site-layout/Footer'
-import Layout from './components/site-layout/Layout'
+import { Route, Routes } from 'react-router-dom'
+import pages from './utils/pages'
 
-import {Routes, Route} from "react-router-dom"
+import Layout from './components/site-layout/Layout'
+import Home from './components/pages/Home'
+import Reservations from './components/pages/Reservations'
+import UnderConstruction from './components/pages/UnderConstruction'
 
 function App() {
 	return (
-		<Layout />
+		<Layout>
+			<Routes>
+				<Route
+					path={ pages.get('home').path }
+					element={ <Home /> }
+				/>
+				<Route 
+					path={ pages.get('about').path }
+					element={ <UnderConstruction /> }
+				/>
+			</Routes>
+		</Layout>
 	);
 }
 
