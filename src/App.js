@@ -20,6 +20,30 @@ function App() {
 					path={ pages.get('about').path }
 					element={ <UnderConstruction /> }
 				/>
+				<Route 
+					path={ pages.get('menu').path }
+					element={ <UnderConstruction /> }
+				/>
+				<Route 
+					path={ pages.get('reservations').path }
+					element={ <Reservations /> }
+				/>
+				<Route 
+					path={ pages.get('confirmedReservation').path }
+					element={ <ConfirmedReservation /> }
+				/>
+				<Route 
+					path={ pages.get('orderOnline').path }
+					element={ <UnderConstruction /> }
+				/>
+				<Route 
+					path={ pages.get('login').path }
+					element={ <UnderConstruction /> }
+				/>
+				<Route 
+					path="*"
+					element={ <NotFound /> }
+				/>
 			</Routes>
 		</Layout>
 	);
