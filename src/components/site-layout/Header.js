@@ -15,7 +15,15 @@ export default function Header() {
     return (
         <header>
             <nav className="container grid nav-bar">
-                
+                <Link className="nav-bar-logo" to={ pages.get('home').path }>
+                    <img src={ LogoImage } alt="Little Lemon Logo" />
+                </Link>
+                <button className="nav-bar-hamburger" type="button" onClick={ setIsNavExpanded(!isNavExpanded) }>
+                    { isNavExpanded ? 
+                    <FontAwesomeIcon icon={ faXmark } /> :
+                    <FontAwesomeIcon icon={ faBars } /> }
+                </button>
+
             </nav>
         </header>
     )
