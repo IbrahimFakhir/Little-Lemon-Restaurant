@@ -5,7 +5,7 @@ import pages from "../../../utils/pages"
 
 export default function Hero() {
     return (
-        <section className="Hero">
+        <section className="hero">
             <div className="container grid">
                 <div className="hero-information">
                     <h1>Little Lemon</h1>
@@ -21,7 +21,7 @@ export default function Hero() {
                 <img 
                     className="hero-image"
                     src={ restaurantFoodImage }
-                    alt="Restaurant Food"
+                    alt="Restaurant food"
                 />
             </div>
         </section>
