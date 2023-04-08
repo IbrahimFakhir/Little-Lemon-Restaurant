@@ -9,12 +9,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const navLinks = Array.from(pages.values()).filter(page => page.anchorable)
 
 export default function Header() {
-    const {pathname} = useLocation();
+    const { pathname } = useLocation();
     const [isNavExpanded, setIsNavExpanded] = useState(false);
     
     return (
         <header>
-            <img src={LogoImage} alt="Little Lemon Logo" />
+            <nav className="container grid nav-bar">
+                
+            </nav>
         </header>
     )
 }
