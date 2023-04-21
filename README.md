@@ -1,6 +1,6 @@
 # My Capstone Project
 
-This repo contains my Capstone Project from the "Meta Front End Developer Professional Certificate".
+This repo contains my Capstone Project from the "Meta Front End Developer Professional Certificate" on Coursera.
 
 ## Setup
 - Use "npm install" for quick setup
