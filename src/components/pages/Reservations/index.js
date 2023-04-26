@@ -14,7 +14,7 @@ const initializeTimes = initialAvailableTimes => [...initialAvailableTimes, ...f
 
 export default function Reservation() {
     const [availableTimes, dispatchOnDateChange] = useReducer(updateTimes, [], initializeTimes);
-    const navigate = useNavigate;
+    const navigate = useNavigate();
 
     const submitData = formData => {
         const response = submitAPI(formData);
