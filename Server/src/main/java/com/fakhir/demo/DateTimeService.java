@@ -14,11 +14,11 @@ public class DateTimeService {
     private DateTimeRepository dateTimeRepository;
 
     public List<Date> getAllDateTime() {
-        List<Entity> entities = dateTimeRepository.findAll();
+        List<DateTime> entities = dateTimeRepository.findAll();
 
         List<Date> dates = new ArrayList<>();
 
-        for (Entity entity : entities) {
+        for (DateTime entity : entities) {
             dates.add(entity.date);
         }
 
