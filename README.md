@@ -1,5 +1,7 @@
 # The Little Lemon Restaurant
 
+![Alt text](/blob/main/Client/src/components/site-layout/assets/logo.png?raw=true "Optional Title")
+
 <description>
 
 ## Quick Start
