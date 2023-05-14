@@ -2,11 +2,11 @@
 
 ## Tech Stack
 
-# Frontend
+### Frontend
 - HTML, CSS
 - React
 
-# Backend
+### Backend
 - Java Spring framework
 - H2 Database
 
