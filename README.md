@@ -1,7 +1,5 @@
-# My Capstone Project
+# The Little Lemon Restaurant
 
-This repo contains my Capstone Project from the "Meta Front End Developer Professional Certificate".
-
-## Setup
+## Quick Start
 - Use "npm install" to install dependencies
 - Use "npm run" to run the App
