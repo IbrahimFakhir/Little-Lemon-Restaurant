@@ -1,6 +1,6 @@
 # The Little Lemon Restaurant
 
-![Alt text](/Client/src/components/site-layout/assets/logo.png?raw=true "Optional Title")
+![Logo Image of Little Lemon Restaurant](/Client/src/components/site-layout/assets/logo.png?raw=true "Optional Title")
 
 <description>
 
