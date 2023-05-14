@@ -1,5 +1,11 @@
 # The Little Lemon Restaurant
 
+<description>
+
+## Quick Start
+- Use "npm install" to install dependencies
+- Use "npm run" to run the App
+
 ## Tech Stack
 
 ### Frontend
@@ -9,7 +15,3 @@
 ### Backend
 - Java Spring framework
 - H2 Database
-
-## Quick Start
-- Use "npm install" to install dependencies
-- Use "npm run" to run the App
