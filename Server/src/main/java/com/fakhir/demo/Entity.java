@@ -13,5 +13,4 @@ public class Entity {
     Integer id;
     @Column
     Date date;
-    boolean available;
 }
