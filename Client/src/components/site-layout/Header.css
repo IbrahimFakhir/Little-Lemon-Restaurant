@@ -64,30 +64,30 @@
 
 @media only screen and (max-width: 992px) {
     .nav-bar {
-    grid-template-columns: auto auto;
+        grid-template-columns: auto auto;
     }
 
     .nav-bar-hamburger {
-    width: 2.5rem;
-    justify-self: end;
-    display: inline-block;
-    background: none;
-    border: none;
+        width: 2.5rem;
+        justify-self: end;
+        display: inline-block;
+        background: none;
+        border: none;
     }
 
     .nav-bar-links {
-    position: absolute;
-    flex-direction: column;
-    width: 50%;
-    height: 100vh;
-    top: 0;
-    left: -50%;
-    background-color: #FFFFFF;
-    box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.2);
-    z-index: 100;
+        position: absolute;
+        flex-direction: column;
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        left: -50%;
+        background-color: #FFFFFF;
+        box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.2);
+        z-index: 100;
     }
 
     .nav-bar-links li {
-    flex-direction: column;
+        flex-direction: column;
     }
 }
