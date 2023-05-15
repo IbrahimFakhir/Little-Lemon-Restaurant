@@ -1,17 +1,15 @@
 package com.fakhir.demo;
 
 import com.fakhir.demo.model.Occasion;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.util.Date;
 
 @Entity
 public class ReservationEntity {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "reservation_sequence")
+    @SequenceGenerator(name = "reservation_sequence", sequenceName= "reservationSequence", initialValue = 2, allocationSize = 1)
     Integer id;
     @Column
     String date;
