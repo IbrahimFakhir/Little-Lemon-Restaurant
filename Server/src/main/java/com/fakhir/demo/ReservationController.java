@@ -9,17 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/v1/date-time")
-public class DateTimeController {
+public class ReservationController {
 
     @Autowired
-    private DateTimeService dateTimeService;
+    private ReservationService reservationService;
 
     @GetMapping
-    public ResponseEntity<List<Date>> getAvailableDateTimes() {
-        return new ResponseEntity<List<Date>>(dateTimeService.getAllDateTime(), HttpStatus.OK);
+    public ResponseEntity<Map<String, Integer>> getAvailableDateTimes() {
+        return new ResponseEntity<>(reservationService.getAllDateTime(), HttpStatus.OK);
     }
 
 }
