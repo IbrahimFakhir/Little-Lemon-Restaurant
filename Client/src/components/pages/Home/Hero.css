@@ -1,6 +1,7 @@
 .hero {
     padding-top: 1.875rem;
     background-color: #495E57;
+    border-top: 1rem solid #495E57;
 }
 
 .hero .container {
