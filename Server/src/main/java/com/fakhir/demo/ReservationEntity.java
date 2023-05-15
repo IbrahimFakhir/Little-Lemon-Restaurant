@@ -9,7 +9,7 @@ import java.util.Date;
 public class ReservationEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "reservation_sequence")
-    @SequenceGenerator(name = "reservation_sequence", sequenceName= "reservationSequence", initialValue = 2, allocationSize = 1)
+    @SequenceGenerator(name = "reservation_sequence", sequenceName= "reservationSequence", initialValue = 3, allocationSize = 1)
     Integer id;
     @Column
     String date;

@@ -1,21 +1,22 @@
 package com.fakhir.demo;
 
+import com.fakhir.demo.model.Reservation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.*;
 
 @Service
 public class ReservationService {
 
     @Autowired
-    private ReservationRepository dateTimeRepository;
+    private ReservationRepository reservationRepository;
 
     public TreeMap<String, Integer> getAllDateTime(String date) {
 
-        List<ReservationEntity> entities = dateTimeRepository.findByDateContaining(date);
+        List<ReservationEntity> entities = reservationRepository.findByDateContaining(date);
 
         TreeMap<String, Integer> dates = new TreeMap<String, Integer>();
 
@@ -37,16 +38,29 @@ public class ReservationService {
         dates.put("23:30", MAX_NUM_GUESTS);
 
         for (ReservationEntity entitiy : entities) {
-
-            // 2022-03-06 22:00:00
             dates.put(entitiy.date.substring(11), dates.get(entitiy.date.substring(11)) - entitiy.numGuests);
-
         }
 
         dates.values().removeIf(f -> f == 0f);
 
         return dates;
 
+    }
+
+    public ResponseEntity<Void> makeReservation(Reservation reservation) {
+
+        ReservationEntity reservationEntity = new ReservationEntity();
+
+        reservationEntity.date = reservation.getDate();
+        reservationEntity.numGuests = reservation.getNumGuests();
+        reservationEntity.occasion = reservation.getOccasion();
+        reservationEntity.name = reservation.getName();
+        reservationEntity.email = reservation.getEmail();
+        reservationEntity.telephone = reservation.getTelephone();
+
+        reservationRepository.save(reservationEntity);
+
+        return new ResponseEntity<Void>(HttpStatus.CREATED);
     }
 
 }
