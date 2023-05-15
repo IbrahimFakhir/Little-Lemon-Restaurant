@@ -14,7 +14,7 @@ public class ReservationEntity {
     @GeneratedValue
     Integer id;
     @Column
-    Date date;
+    String date;
     Integer numGuests;
     Occasion occasion;
     String name;

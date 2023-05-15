@@ -3,10 +3,9 @@ package com.fakhir.demo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.*;
 
 @Service
 public class ReservationService {
@@ -14,16 +13,16 @@ public class ReservationService {
     @Autowired
     private ReservationRepository dateTimeRepository;
 
-    public Map<String, Integer> getAllDateTime() {
-        List<ReservationEntity> entities = dateTimeRepository.findAll();
+    public HashMap<String, Integer> getAllDateTime(String date) {
 
-        Map<String, Integer> dates = new Map<String, Integer>();
+        List<ReservationEntity> entities = dateTimeRepository.findByDateContaining(date);
 
-        for (ReservationEntity entity : entities) {
-            dates.add(entity.date);
-        }
+        HashMap<String, Integer> dates = new HashMap<>();
+
+        System.out.println(entities.get(0).date);
 
         return dates;
+
     }
 
 }
