@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import './index.css';
 import { fetchAPI, submitAPI } from "../../../utils/fakeAPI";
 import pages from '../../../utils/pages';
-import ReservationForm from './ReservationForm'
+import ReservationForm from './ReservationForm';
 
 const updateTimes = (availableTimes, date) => {
     const response = fetchAPI(new Date(date));

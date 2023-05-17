@@ -18,6 +18,7 @@ public class ReservationController {
     @Autowired
     private ReservationService reservationService;
 
+    @CrossOrigin
     @RequestMapping(
             value = "/api/v1/availableTimes/{date}",
             method = RequestMethod.GET,
