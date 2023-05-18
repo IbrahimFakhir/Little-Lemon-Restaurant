@@ -33,7 +33,57 @@ const ReservationSubmit = (handleFormSubmit) => {
                     errorMessage={invalidFirstNameErrorMessage}
                 >
                     <input
-                        
+                        type="text"
+                        id="first-name"
+                        name="first-name"
+                        value={firstName}
+                        required={true}
+                        onChange={e => setFirstName(e.target.value)}
+                    />
+                </FormField>
+                <FormField
+                    label="Last Name"
+                    htmlFor="last-name"
+                    hasError={!isLastNameValid}
+                    errorMessage={invalidLastNameErrorMessage}
+                >
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="last-name"
+                        value={lastName}
+                        required={true}
+                        onChange={e => setLastName(e.target.value)}
+                    />
+                </FormField>
+                <FormField
+                    label="Email"
+                    htmlFor="email"
+                    hasError={!isEmailValid}
+                    errorMessage={invalidEmailErrorMessage}
+                >
+                    <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        value={email}
+                        required={true}
+                        onChange={e => setEmail(e.target.value)}
+                    />
+                </FormField>
+                <FormField
+                    label="Telephone Number"
+                    htmlFor="phone"
+                    hasError={!isPhoneValid}
+                    errorMessage={invalidPhoneErrorMessage}
+                >
+                    <input
+                        type="text"
+                        id="phone"
+                        name="phone"
+                        value={phone}
+                        required={true}
+                        onChange={e => setPhone(e.target.value)}
                     />
                 </FormField>
             </form>
