@@ -1,7 +1,11 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import FormField from './FormField';
+import pages from '../../../utils/pages';
 
 const ReservationForm = ({availableTimes, dispatchOnDateChange, submitData}) => {
+    const navigate = useNavigate();
+    
     const minimumDate = new Date().toISOString().split('T')[0];
     const defaultTime = availableTimes[0];
     const minGuests = 1;
@@ -36,7 +40,14 @@ const ReservationForm = ({availableTimes, dispatchOnDateChange, submitData}) => 
 
     const handleFormSubmit = e => {
         e.preventDefault();
-        submitData({ date, time, numGuests, occasion });
+        // submitData({ date, time, numGuests, occasion });
+        const info = {
+            date: date,
+            time: time,
+            numGuests: numGuests,
+            occasion: occasion
+        }
+        navigate(pages.get('reservationSubmit').path, {state: info});
     };
 
     return (
