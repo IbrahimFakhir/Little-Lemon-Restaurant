@@ -22,7 +22,7 @@ export default function Reservation() {
     }
     
     return (
-        <div className="bookings">
+        <div className="reservations">
             <h2>Table Bookings</h2>
             <ReservationForm 
                 availableTimes={availableTimes}
