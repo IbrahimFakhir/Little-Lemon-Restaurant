@@ -1,7 +1,11 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import FormField from "./FormField";
+import "./index.css";
 
-const ReservationSubmit = (handleFormSubmit) => {
+const ReservationSubmit = () => {
+    const location = useLocation();
+    
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -21,6 +25,10 @@ const ReservationSubmit = (handleFormSubmit) => {
         && isLastNameValid()
         && isEmailValid()
         && isPhoneValid();
+
+    const handleFormSubmit = e => {
+        e.preventDefault();
+    }
 
     return (
         <div className="reservations">
@@ -86,6 +94,22 @@ const ReservationSubmit = (handleFormSubmit) => {
                         onChange={e => setPhone(e.target.value)}
                     />
                 </FormField>
+
+                <div className="check-info">
+                    <p>{location.state.date}</p>
+                    <p>{location.state.time}</p>
+                    <p>{location.state.numGuests}</p>
+                    <p>{location.state.occasion}</p>
+                </div>
+
+                <button
+                    className='button-primary'
+                    type="submit"
+                    disabled={!areAllFieldsValid}
+                >
+                    Continue
+                </button>
+
             </form>
         </div>
     )

@@ -40,7 +40,12 @@ export default function UnderConstruction() {
     }
 
     const continue_reservation = () => {
-        navigate(pages.get('reservationSubmit').path);
+        navigate(pages.get('reservationSubmit').path, {state : {
+            date: "2022-06-03",
+            time: "17:00",
+            numGuests: 3,
+            occasion: "Birthday"
+        }});
     }
     
     return (
