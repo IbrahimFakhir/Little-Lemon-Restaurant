@@ -2,8 +2,12 @@ import { faPersonDigging } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.css';
 import api from '../../../utils/axiosConfig';
+import pages from '../../../utils/pages';
+import { useNavigate } from 'react-router-dom';
 
 export default function UnderConstruction() {
+    const navigate = useNavigate();
+    
     const testPost = async () => {
         try {
             const response = await api.post(
@@ -34,6 +38,10 @@ export default function UnderConstruction() {
             console.log(err);
         }
     }
+
+    const continue_reservation = () => {
+        navigate(pages.get('reservationSubmit').path);
+    }
     
     return (
         <div className='container under-construction'>
@@ -42,6 +50,8 @@ export default function UnderConstruction() {
 
             <button onClick={testPost}>Post</button>
             <button onClick={testGet}>Get</button>
+
+            <button onClick={continue_reservation}>Continue</button>
         </div>
     )
 }

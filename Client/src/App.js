@@ -4,6 +4,7 @@ import Layout from './components/site-layout/Layout'
 
 import Home from './components/pages/Home'
 import Reservations from './components/pages/Reservations'
+import ReservationSubmit from './components/pages/Reservations/ReservationSubmit'
 import ConfirmedReservation from './components/pages/Reservations/ConfirmedReservation'
 import NotFound from './components/pages/NotFound'
 import UnderConstruction from './components/pages/UnderConstruction'
@@ -27,6 +28,10 @@ function App() {
 				<Route 
 					path={ pages.get('reservations').path }
 					element={ <Reservations /> }
+				/>
+				<Route 
+					path={ pages.get('reservationSubmit').path }
+					element={ <ReservationSubmit /> }
 				/>
 				<Route 
 					path={ pages.get('confirmedReservation').path }
