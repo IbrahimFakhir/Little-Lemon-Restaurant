@@ -5,7 +5,24 @@ import api from '../../../utils/axiosConfig';
 
 export default function UnderConstruction() {
     const testPost = async () => {
-        
+        try {
+            const response = await api.post(
+                "/api/v1/booking",
+                {
+                    "date": "2022-03-06 22:00",
+                    "numGuests": 3,
+                    "occasion": "1",
+                    "name": "mofo",
+                    "email": "mogo",
+                    "telephone": "dasdsa"
+                }
+            )
+            
+            console.log(typeof response.data);
+        }
+        catch (err) {
+            console.log(err);
+        }
     }
     const testGet = async () => {
         try {
@@ -25,7 +42,6 @@ export default function UnderConstruction() {
 
             <button onClick={testPost}>Post</button>
             <button onClick={testGet}>Get</button>
-            
         </div>
     )
 }

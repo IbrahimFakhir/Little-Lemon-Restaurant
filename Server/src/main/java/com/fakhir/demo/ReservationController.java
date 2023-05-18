@@ -28,6 +28,7 @@ public class ReservationController {
         return new ResponseEntity<>(reservationService.getAllDateTime(date), HttpStatus.OK);
     }
 
+    @CrossOrigin
     @RequestMapping(
             value = "/api/v1/booking",
             method = RequestMethod.POST,
