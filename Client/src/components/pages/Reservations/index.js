@@ -2,6 +2,7 @@ import { useReducer } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import './index.css';
+import api from "../../../utils/axiosConfig";
 import { fetchAPI, submitAPI } from "../../../utils/fakeAPI";
 import pages from '../../../utils/pages';
 import ReservationForm from './ReservationForm';
@@ -13,13 +14,32 @@ const updateTimes = (availableTimes, date) => {
 
 const initializeTimes = initialAvailableTimes => [...initialAvailableTimes, ...fetchAPI(new Date())];
 
+const initializeTimes2 = async () => {
+    const currentDay = new Date().toISOString().split('T')[0];
+    
+    try {
+        const response = await api.get(`/api/v1/availableTimes/${currentDay}`);
+
+        console.log(`Day: ${currentDay}`)
+        console.log(response.data);
+
+        return response;
+    }
+    catch (err) {
+        console.log(err);
+    }
+}
+
 export default function Reservation() {
     const [availableTimes, dispatchOnDateChange] = useReducer(updateTimes, [], initializeTimes);
     const navigate = useNavigate();
 
-    useEffect(() => {
+    /* useEffect(() => {
         console.log("I should only log on first render");
-    }, [])
+
+        initializeTimes2();
+
+    }, []) */
 
     const submitData = formData => {
         const response = submitAPI(formData);
