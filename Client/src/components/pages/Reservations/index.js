@@ -1,4 +1,4 @@
-import { useReducer } from "react";
+import { useDebugValue, useReducer, useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import './index.css';
@@ -14,32 +14,24 @@ const updateTimes = (availableTimes, date) => {
 
 const initializeTimes = initialAvailableTimes => [...initialAvailableTimes, ...fetchAPI(new Date())];
 
-const initializeTimes2 = async () => {
-    const currentDay = new Date().toISOString().split('T')[0];
-    
-    try {
-        const response = await api.get(`/api/v1/availableTimes/${currentDay}`);
-
-        console.log(`Day: ${currentDay}`)
-        console.log(response.data);
-
-        return response;
-    }
-    catch (err) {
-        console.log(err);
-    }
+const updateTimes2 = date => {
+    api.get(`http://localhost:8080/api/v1/availableTimes/${date}`)
+        .then((response) => console.log(response.data))
 }
 
 export default function Reservation() {
     const [availableTimes, dispatchOnDateChange] = useReducer(updateTimes, [], initializeTimes);
     const navigate = useNavigate();
 
-    /* useEffect(() => {
-        console.log("I should only log on first render");
+    const [times, setTimes] = useState({"": ""});
 
-        initializeTimes2();
+    useEffect(() => {
+        const todaysDate = new Date().toISOString().split('T')[0];
 
-    }, []) */
+        api.get(`http://localhost:8080/api/v1/availableTimes/${todaysDate}`)
+        .then((response) => setTimes(response.data))
+
+    }, [])
 
     const submitData = formData => {
         const response = submitAPI(formData);
@@ -49,6 +41,7 @@ export default function Reservation() {
     return (
         <div className="reservations">
             <h2>Table Bookings</h2>
+            <button onClick={() => console.log(times)}>check</button>
             <ReservationForm 
                 availableTimes={availableTimes}
                 dispatchOnDateChange={dispatchOnDateChange}
