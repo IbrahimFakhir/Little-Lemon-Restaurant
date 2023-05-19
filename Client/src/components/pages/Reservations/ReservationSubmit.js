@@ -2,10 +2,11 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import FormField from "./FormField";
 import "./index.css";
+import api from "../../../utils/axiosConfig";
 
 const ReservationSubmit = () => {
     const location = useLocation();
-    
+
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
@@ -28,6 +29,24 @@ const ReservationSubmit = () => {
 
     const handleFormSubmit = e => {
         e.preventDefault();
+
+        const reservation_data = {
+            "date": location.state.date + " " + location.state.time,
+            "numGuests": location.state.numGuests,
+            "occasion": location.state.occasion === "Birthday" ? "1" : "0",
+            "name": firstName + " " + lastName,
+            "email": email,
+            "telephone": phone
+        }
+
+        console.log(reservation_data);
+
+        try {
+            api.post("/api/v1/reservation", reservation_data);
+        }
+        catch (err) {
+            console.log(err);
+        }
     }
 
     return (

@@ -8,7 +8,7 @@ export default function UnderConstruction() {
     const testPost = async () => {
         try {
             const response = await api.post(
-                "/api/v1/booking",
+                "/api/v1/reservation",
                 {
                     "date": "2022-03-06 22:00",
                     "numGuests": 3,
@@ -27,7 +27,7 @@ export default function UnderConstruction() {
     }
     const testGet = async () => {
         try {
-            const response = await api.get("/api/v1/availableTimes/2022-03-06")
+            const response = await api.get("/api/v1/availableTimes/2023-05-19")
 
             console.log(response.data);
         }

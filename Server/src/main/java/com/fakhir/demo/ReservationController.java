@@ -30,7 +30,7 @@ public class ReservationController {
 
     @CrossOrigin
     @RequestMapping(
-            value = "/api/v1/booking",
+            value = "/api/v1/reservation",
             method = RequestMethod.POST,
             consumes = {"application/json"}
     )
