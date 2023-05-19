@@ -27,6 +27,7 @@ const ReservationSubmit = () => {
         && isEmailValid()
         && isPhoneValid();
 
+    // async? useEffect?
     const handleFormSubmit = e => {
         e.preventDefault();
 

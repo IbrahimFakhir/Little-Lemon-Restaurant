@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import './index.css';
 import { fetchAPI, submitAPI } from "../../../utils/fakeAPI";
@@ -15,6 +16,10 @@ const initializeTimes = initialAvailableTimes => [...initialAvailableTimes, ...f
 export default function Reservation() {
     const [availableTimes, dispatchOnDateChange] = useReducer(updateTimes, [], initializeTimes);
     const navigate = useNavigate();
+
+    useEffect(() => {
+        console.log("I should only log on first render");
+    }, [])
 
     const submitData = formData => {
         const response = submitAPI(formData);
