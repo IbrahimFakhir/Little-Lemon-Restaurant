@@ -6,6 +6,7 @@ import Home from './components/pages/Home'
 import Reservations from './components/pages/Reservations'
 import ReservationSubmit from './components/pages/Reservations/ReservationSubmit'
 import ConfirmedReservation from './components/pages/Reservations/ConfirmedReservation'
+import PreviousReservations from './components/pages/Reservations/PreviousReservations'
 import NotFound from './components/pages/NotFound'
 import UnderConstruction from './components/pages/UnderConstruction'
 
@@ -36,6 +37,10 @@ function App() {
 				<Route 
 					path={ pages.get('confirmedReservation').path }
 					element={ <ConfirmedReservation /> }
+				/>
+				<Route 
+					path={ pages.get('previousReservations').path }
+					element={ <PreviousReservations /> }
 				/>
 				<Route 
 					path={ pages.get('orderOnline').path }

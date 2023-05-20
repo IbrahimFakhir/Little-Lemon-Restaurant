@@ -49,6 +49,12 @@ const ReservationForm = ({availableTimes, dispatchOnDateChange}) => {
         navigate(pages.get('reservationSubmit').path, {state: info});
     };
 
+    const previousReservations = () => {
+        console.log("clicked");
+
+        navigate(pages.get('previousReservations').path);
+    }
+
     return (
         <form onSubmit={handleFormSubmit}>
             <FormField
@@ -128,6 +134,13 @@ const ReservationForm = ({availableTimes, dispatchOnDateChange}) => {
                 disabled={!areAllFieldsValid}
             >
                 Continue
+            </button>
+            <button 
+                className='button-secondary'
+                type='button'
+                onClick={previousReservations}
+            >
+                View Previous Reservations
             </button>
         </form>
     )

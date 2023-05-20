@@ -9,6 +9,7 @@ pages.set('menu', { name: 'Menu', path: '/menu', anchorable: true })
 pages.set('reservations', { name: 'Reservations', path: '/reservations', anchorable: true })
 pages.set('reservationSubmit', { name: 'Reservation Submit', path: '/reservation-submit', anchorable: false })
 pages.set('confirmedReservation', { name: 'Confirmed Reservation', path: '/confirmed-reservation', anchorable: false })
+pages.set('previousReservations', { name: 'Previous Reservations', path: '/previous-reservations', anchorable: false })
 
 pages.set('orderOnline', { name: 'Order Online', path: '/order-online', anchorable: true })
 

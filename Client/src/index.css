@@ -105,3 +105,20 @@ main > section {
 	border-color: #495E57;
 	color: #FFFFFF;
 }
+
+.button-secondary {
+	padding: 0.5rem 1rem;
+	border-radius: 2rem;
+	background-color: white;
+	color: #495E57;
+	font-weight: bold;
+	border: 0.1875rem solid #495E57;
+	transition: background, border, color 0.5s;
+}
+
+.button-secondary:hover, 
+.button-secondary:focus {
+	background-color: #495E57;
+	border-color: #495E57;
+	color: #FFFFFF;
+}
