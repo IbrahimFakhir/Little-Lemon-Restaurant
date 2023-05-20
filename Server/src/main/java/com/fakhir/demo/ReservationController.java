@@ -17,7 +17,7 @@ public class ReservationController {
 
     @CrossOrigin
     @RequestMapping(
-            value = "/api/v1/availableTimes/{name}",
+            value = "/api/v1/booked-reservations/{name}",
             method = RequestMethod.GET,
             produces = {"application/json"}
     )

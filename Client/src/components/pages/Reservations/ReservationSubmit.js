@@ -1,11 +1,14 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 import FormField from "./FormField";
+import pages from "../../../utils/pages"
 import "./index.css";
 import api from "../../../utils/axiosConfig";
 
 const ReservationSubmit = () => {
     const location = useLocation();
+    const navigate = useNavigate();
 
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -44,6 +47,7 @@ const ReservationSubmit = () => {
 
         try {
             api.post("/api/v1/reservation", reservation_data);
+            navigate(pages.get('confirmedReservation').path);
         }
         catch (err) {
             console.log(err);
