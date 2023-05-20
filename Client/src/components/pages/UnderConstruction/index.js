@@ -18,8 +18,6 @@ export default function UnderConstruction() {
                     "telephone": "dasdsa"
                 }
             )
-            
-            console.log(typeof response.data);
         }
         catch (err) {
             console.log(err);
@@ -27,7 +25,7 @@ export default function UnderConstruction() {
     }
     const testGet = async () => {
         try {
-            const response = await api.get("/api/v1/availableTimes/2023-05-19")
+            const response = await api.get("/api/v1/availableTimes/2022-03-06")
 
             console.log(response.data);
         }

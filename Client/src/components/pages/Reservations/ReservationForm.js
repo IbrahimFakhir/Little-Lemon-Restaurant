@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import FormField from './FormField';
 import pages from '../../../utils/pages';
 
-const ReservationForm = ({availableTimes, dispatchOnDateChange, submitData}) => {
+const ReservationForm = ({availableTimes, dispatchOnDateChange}) => {
     const navigate = useNavigate();
     
     const minimumDate = new Date().toISOString().split('T')[0];
@@ -40,7 +40,6 @@ const ReservationForm = ({availableTimes, dispatchOnDateChange, submitData}) => 
 
     const handleFormSubmit = e => {
         e.preventDefault();
-        // submitData({ date, time, numGuests, occasion });
         const info = {
             date: date,
             time: time,

@@ -1,14 +1,11 @@
 package com.fakhir.demo;
 
 import com.fakhir.demo.model.Reservation;
-import org.hibernate.annotations.Parameter;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -20,12 +17,12 @@ public class ReservationController {
 
     @CrossOrigin
     @RequestMapping(
-            value = "/api/v1/availableTimes/{date}",
+            value = "/api/v1/availableTimes/{name}",
             method = RequestMethod.GET,
             produces = {"application/json"}
     )
-    public ResponseEntity<Map<String, Integer>> getAvailableDateTimes(@PathVariable("date") String date) {
-        return new ResponseEntity<>(reservationService.getAllDateTime(date), HttpStatus.OK);
+    public ResponseEntity<List<Reservation>> getReservationsByName(@PathVariable("name") String name) {
+        return new ResponseEntity<>(reservationService.getReservationsByName(name), HttpStatus.OK);
     }
 
     @CrossOrigin
