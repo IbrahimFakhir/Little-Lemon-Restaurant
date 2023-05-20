@@ -9,6 +9,22 @@
     margin: 0 auto 1.875rem auto;
 }
 
+.reservations .check-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    border: #495E57 solid 0.1rem;
+    border-radius: 0.375rem;
+    padding: 16px;
+    background-color: #EDEFEE;
+}
+
+.label {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .form-field {
     display: flex;
     flex-direction: column;

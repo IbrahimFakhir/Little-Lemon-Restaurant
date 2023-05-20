@@ -120,10 +120,20 @@ const ReservationSubmit = () => {
                 </FormField>
 
                 <div className="check-info">
-                    <p>{location.state.date}</p>
-                    <p>{location.state.time}</p>
-                    <p>{location.state.numGuests}</p>
-                    <p>{location.state.occasion}</p>
+                    <div>
+                        <p className="label">Date</p>
+                        <p>{location.state.date}</p>
+                    </div>
+                        <p className="label">Time</p>
+                        <p>{location.state.time}</p>
+                    <div>
+                        <p className="label">Number of Guests</p>
+                        <p>{location.state.numGuests}</p>
+                    </div>
+                    <div>
+                        <p className="label">Occasion</p>
+                        <p>{location.state.occasion}</p>
+                    </div>
                 </div>
 
                 <button
@@ -131,7 +141,7 @@ const ReservationSubmit = () => {
                     type="submit"
                     disabled={!areAllFieldsValid}
                 >
-                    Continue
+                    Submit
                 </button>
 
             </form>
