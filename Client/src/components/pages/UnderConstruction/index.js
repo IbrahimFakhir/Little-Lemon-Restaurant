@@ -41,6 +41,7 @@ export default function UnderConstruction() {
             <FontAwesomeIcon icon={ faPersonDigging } size='3x' />
             <h2>Page under construction</h2>
 
+            {/* debugging purposes */}
             <button onClick={testPost}>Post</button>
             <button onClick={testGet}>Get</button>
         </div>

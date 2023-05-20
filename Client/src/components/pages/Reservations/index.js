@@ -1,4 +1,4 @@
-import { useDebugValue, useReducer, useState } from "react";
+import { useReducer, useState } from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import './index.css';
@@ -41,7 +41,6 @@ export default function Reservation() {
     return (
         <div className="reservations">
             <h2>Table Bookings</h2>
-            <button onClick={() => console.log(times)}>check</button>
             <ReservationForm 
                 availableTimes={availableTimes}
                 dispatchOnDateChange={dispatchOnDateChange}
