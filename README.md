@@ -2,11 +2,10 @@
 
 ![Logo Image of Little Lemon Restaurant](/Client/src/components/site-layout/assets/logo.png?raw=true "Optional Title")
 
-<description>
-
 ## Quick Start
-- Use "npm install" to install dependencies
-- Use "npm run" to run the App
+- Start Spring Application (Server)
+- Use "npm install" to install dependencies (Client)
+- Use "npm run" to run the App (Client)
 
 ## Tech Stack
 
