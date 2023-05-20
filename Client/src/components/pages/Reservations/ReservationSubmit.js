@@ -43,8 +43,6 @@ const ReservationSubmit = () => {
             "telephone": phone
         }
 
-        console.log(reservation_data);
-
         try {
             api.post("/api/v1/reservation", reservation_data);
             navigate(pages.get('confirmedReservation').path);

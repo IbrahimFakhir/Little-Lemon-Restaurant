@@ -50,8 +50,6 @@ const ReservationForm = ({availableTimes, dispatchOnDateChange}) => {
     };
 
     const previousReservations = () => {
-        console.log("clicked");
-
         navigate(pages.get('previousReservations').path);
     }
 
