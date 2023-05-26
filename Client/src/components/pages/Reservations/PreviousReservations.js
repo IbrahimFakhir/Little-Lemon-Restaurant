@@ -23,13 +23,10 @@ export default function PreviousReservations () {
     const isLastNameValid = () => lastName !== '';
     const areAllFieldsValid = () => isFirstNameValid && isLastNameValid;
 
-    const test = () => console.log(typeof reservations[0]);
-
     return (
         <div className='reservations'>
             <h2>Previous Reservations</h2>
             <div className='container previous-reservations'>
-                <button onClick={test}>test</button>
                 <form onSubmit={handleFormSubmit}>
                     <FormField
                         label="First Name"
