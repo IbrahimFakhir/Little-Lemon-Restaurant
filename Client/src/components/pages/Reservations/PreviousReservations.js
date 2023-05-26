@@ -2,6 +2,7 @@ import { useState } from "react";
 import FormField from "./FormField";
 import api from "./../../../utils/axiosConfig";
 import "./index.css";
+import ReservationDetails from "./ReservationDetails";
 
 export default function PreviousReservations () {
     const [firstName, setFirstName] = useState("");
@@ -22,7 +23,7 @@ export default function PreviousReservations () {
     const isLastNameValid = () => lastName !== '';
     const areAllFieldsValid = () => isFirstNameValid && isLastNameValid;
 
-    const test = () => console.log(reservations);
+    const test = () => console.log(typeof reservations[0]);
 
     return (
         <div className='reservations'>
@@ -65,11 +66,19 @@ export default function PreviousReservations () {
                         type="submit"
                         disabled={!areAllFieldsValid}
                     >
-                        Get Reservations
+                        View Reservations
                     </button>
                 </form>
                 { reservations.length !== 0 && 
-                    <p>Here are your reservations:</p>
+                    <div className="prev-reservations">
+                        {reservations.map((reservation, index) =>
+                            <ReservationDetails 
+                            key={index}
+                            reservation={reservation}
+                            index={index}
+                            />
+                        )}
+                    </div>
                 }
             </div>
         </div>

@@ -53,3 +53,44 @@
     padding: 1.875rem 0 1.875rem 0;
     text-align: center;
 }
+
+.prev-reservations {
+    margin-bottom: 4em;
+}
+
+.order {
+    border: 0.05rem solid #495E57;
+    background-color: #EDEFEE;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.order h3 {
+    padding: 1rem 1.5rem;
+    font-size: 1.125rem;
+    color: white;
+    background-color: #495E57;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.order-details {
+    display: flex;
+    padding: 1rem 1.5rem;
+}
+
+.order-details-column {
+    flex: 1;
+}
+
+.order p {
+    margin: 0.5rem 0;
+    color: #495E57;
+}
+
+/* Media Query für kleine Bildschirme */
+@media (max-width: 576px) {
+    .order-details {
+        flex-direction: column;
+    }
+}
