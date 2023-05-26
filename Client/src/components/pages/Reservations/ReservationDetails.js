@@ -4,7 +4,7 @@ export default function ReservationDetails({ reservation, index }) {
             <h3>Your {index + 1}. Order</h3>
             <div className="order-details">
                 <div className="personal-details">
-                <h4>Personal Details</h4>
+                <h4 className="order-details-heading">Personal Details</h4>
                 <div className="order-details-item">
                     <label>First Name:</label>
                     <span>{reservation.name.split(" ")[0]}</span>
@@ -23,7 +23,7 @@ export default function ReservationDetails({ reservation, index }) {
                 </div>
                 </div>
                 <div className="reservation-details">
-                <h4>Reservation Details</h4>
+                <h4 className="order-details-heading">Reservation Details</h4>
                 <div className="order-details-item">
                     <label>Date:</label>
                     <span>{reservation.date.split(" ")[0]}</span>
