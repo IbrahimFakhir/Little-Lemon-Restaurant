@@ -1,7 +1,7 @@
 export default function ReservationDetails({ reservation, index }) {
     return (
         <div className="order">
-            <h3>Your {index + 1}. Order</h3>
+            <h3>Order #{index + 1}</h3>
             <div className="order-details">
                 <div className="personal-details">
                 <h4 className="order-details-heading">Personal Details</h4>
