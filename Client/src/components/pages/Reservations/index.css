@@ -72,6 +72,8 @@
     background-color: #495E57;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .order-details {
@@ -79,18 +81,57 @@
     padding: 1rem 1.5rem;
 }
 
-.order-details-column {
+.personal-details,
+.reservation-details {
     flex: 1;
 }
 
-.order p {
-    margin: 0.5rem 0;
+.personal-details {
+    margin-right: 1rem;
+    border-right: 0.1rem solid #495E57;
+    padding-right: 1rem;
+}
+
+.reservation-details {
+    padding-left: 1rem;
+}
+
+.order-details-item {
+    margin-bottom: 1rem;
+}
+
+.order-details-item label {
+    display: block;
+    font-weight: bold;
     color: #495E57;
 }
 
-/* Media Query für kleine Bildschirme */
+.order-details-item span {
+    color: #495E57;
+}
+
+.order-details-heading {
+    font-weight: bold;
+    color: #495E57;
+    margin-bottom: 0.5rem;
+}
+
+.order-details-heading h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #495E57;
+}
+
 @media (max-width: 576px) {
     .order-details {
         flex-direction: column;
+    }
+
+.personal-details,
+    .reservation-details {
+        margin-right: 0;
+        border-right: none;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
