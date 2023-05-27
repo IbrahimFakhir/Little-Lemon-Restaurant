@@ -47,5 +47,10 @@
 .about-images img {
     display: block;
     width: 100%;
-    border-radius: 1rem;   
+    border-radius: 1rem;  
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-images img:hover {
+    transform: scale(1.05);
 }
