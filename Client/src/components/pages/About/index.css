@@ -27,9 +27,6 @@
 
 .about-content {
     text-align: center;
-}
-
-.about-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,4 +50,22 @@
 
 .about-images img:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+    .about-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .about-text {
+        flex: 0 0 100%;
+        margin-bottom: 2rem;
+    }
+
+    .about-images {
+        flex: 0 0 100%;
+        margin-bottom: 2rem;
+    }
 }
