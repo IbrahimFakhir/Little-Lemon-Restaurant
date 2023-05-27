@@ -1,7 +1,6 @@
 .headline {
     background-color: #495E57;
     color: white;
-    margin-bottom: 3rem;
 }
 
 .headline h2 {
@@ -9,7 +8,12 @@
     text-align: center;
 }
 
-.story-middle {
+.story {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+}
+
+.middle {
     background-color: #495E57;
     color: white;
 }
@@ -37,5 +41,4 @@
 .about-images img {
     display: block;
     width: 100%;
-    margin-bottom: 1rem;
 }

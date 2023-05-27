@@ -9,7 +9,7 @@ export default function About() {
             <div className="headline">
                 <h2>About Little Lemon</h2>
             </div>
-            <section className="story-beginning">
+            <section className="story beginning">
                 <div className="container about-content">
                     <div className="about-text">
                         <p>
@@ -27,7 +27,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section className="story-middle">
+            <section className="story middle">
                 <div className="container about-content">
                     <div className="about-images">
                         <img
@@ -45,7 +45,7 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <section className="story-end">
+            <section className="story end">
                 <div className="container about-content">
                     <div className="about-text">
                         <p>
