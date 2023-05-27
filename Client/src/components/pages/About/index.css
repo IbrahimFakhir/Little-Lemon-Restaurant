@@ -1,0 +1,35 @@
+.section-headline {
+    background-color: #495E57;
+    color: white;
+}
+
+.section-headline h2 {
+    padding: 1.875rem 0 1.875rem 0;
+    text-align: center;
+}
+
+.about {
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.about-text {
+    flex: 0 0 60%;
+    text-align: left;
+}
+
+.about-images {
+    flex: 0 0 35%;
+}
+
+.about-images img {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
