@@ -3,6 +3,7 @@ import pages from './utils/pages'
 import Layout from './components/site-layout/Layout'
 
 import Home from './components/pages/Home'
+import About from './components/pages/About'
 import Reservations from './components/pages/Reservations'
 import ReservationSubmit from './components/pages/Reservations/ReservationSubmit'
 import ConfirmedReservation from './components/pages/Reservations/ConfirmedReservation'
@@ -20,7 +21,7 @@ function App() {
 				/>
 				<Route 
 					path={ pages.get('about').path }
-					element={ <UnderConstruction /> }
+					element={ <About /> }
 				/>
 				<Route 
 					path={ pages.get('menu').path }
