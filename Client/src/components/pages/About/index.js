@@ -12,6 +12,7 @@ export default function About() {
             <section className="story beginning">
                 <div className="container about-content">
                     <div className="about-text">
+                        <h3 className="section-heading">Our Story Begins</h3>
                         <p>
                             Welcome to Little Lemon - a place that tells the heartwarming story of a family and their culinary passion. Our restaurant emerged from a deep love for Mediterranean cuisine and the desire to present traditional recipes with a modern twist.
                         </p>
@@ -21,7 +22,7 @@ export default function About() {
                     </div>
                     <div className="about-images">
                         <img
-                            src={ marioAndAdrian1 }
+                            src={marioAndAdrian1}
                             alt="Mario and Adrian"
                         />
                     </div>
@@ -31,11 +32,12 @@ export default function About() {
                 <div className="container about-content">
                     <div className="about-images">
                         <img
-                            src={ marioAndAdrian2 }
+                            src={marioAndAdrian2}
                             alt="Mario and Adrian"
                         />
                     </div>
                     <div className="about-text">
+                        <h3 className="section-heading">A Dream Takes Shape</h3>
                         <p>
                             It was Giovanna Rossi, the matriarch of the family, who had the idea of sharing their culinary passion with the world. With her expertise in Mediterranean cuisine and her distinctive sense of taste and aesthetics, she decided to open her own restaurant. She affectionately named it "Little Lemon" - an homage to the vibrant yellow lemon trees that adorned the village and symbolized the characteristic flavor of Mediterranean cuisine.
                         </p>
@@ -48,6 +50,7 @@ export default function About() {
             <section className="story end">
                 <div className="container about-content">
                     <div className="about-text">
+                        <h3 className="section-heading">A Culinary Gathering Place</h3>
                         <p>
                             Word quickly spread about the extraordinary food and warm hospitality found at Little Lemon. The restaurant became a gathering place for locals and visitors alike, drawn to the unique blend of traditional recipes and innovative creations. The love and passion of the Rossi family for their cuisine were reflected in every dish that came out of the kitchen at Little Lemon.
                         </p>
@@ -56,7 +59,7 @@ export default function About() {
                         </p>
                     </div>
                     <div className="about-images">
-                        <img src={ marioAndAdrian1 } alt="Image 3" />
+                        <img src={marioAndAdrian1} alt="Image 3" />
                     </div>
                 </div>
             </section>

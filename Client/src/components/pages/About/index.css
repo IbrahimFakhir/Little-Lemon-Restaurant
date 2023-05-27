@@ -11,6 +11,13 @@
 .story {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
+    margin-bottom: 3rem;
+}
+
+.section-heading {
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ccc;
 }
 
 .middle {
