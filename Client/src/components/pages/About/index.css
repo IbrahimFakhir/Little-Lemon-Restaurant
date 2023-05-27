@@ -1,6 +1,7 @@
 .headline {
     background-color: #495E57;
     color: white;
+    margin-bottom: 4rem;
 }
 
 .headline h2 {
@@ -11,7 +12,6 @@
 .story {
     padding-top: 1.875rem;
     padding-bottom: 1.875rem;
-    margin-bottom: 3rem;
 }
 
 .section-heading {
@@ -33,7 +33,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
 }
 
 .about-text {
@@ -48,4 +47,5 @@
 .about-images img {
     display: block;
     width: 100%;
+    border-radius: 1rem;   
 }
