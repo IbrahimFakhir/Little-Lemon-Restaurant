@@ -1,5 +1,6 @@
-import marioAndAdrian1 from "./assets/mario-adrian-1.jpg"
-import marioAndAdrian2 from "./assets/mario-adrian-2.jpg"
+import smallTown from "./assets/josh-hild-unsplash.jpg"
+import restaurant from "./assets/sakura-yu-unsplash.jpg"
+import food from "./assets/alexandra-tran-unsplash.jpg"
 
 import "./index.css"
 
@@ -22,7 +23,7 @@ export default function About() {
                     </div>
                     <div className="about-images">
                         <img
-                            src={marioAndAdrian1}
+                            src={smallTown}
                             alt="Mario and Adrian"
                         />
                     </div>
@@ -32,7 +33,7 @@ export default function About() {
                 <div className="container about-content">
                     <div className="about-images">
                         <img
-                            src={marioAndAdrian2}
+                            src={restaurant}
                             alt="Mario and Adrian"
                         />
                     </div>
@@ -59,7 +60,7 @@ export default function About() {
                         </p>
                     </div>
                     <div className="about-images">
-                        <img src={marioAndAdrian1} alt="Image 3" />
+                        <img src={food} alt="Image 3" />
                     </div>
                 </div>
             </section>
