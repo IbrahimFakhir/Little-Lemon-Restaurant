@@ -10,29 +10,25 @@ const customers = [
       fullName: 'Maria Sanchez',
       image: customer1Image,
       rating: [1, 1, 1, 1, 0.5],
-      says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      says: `Little Lemon is a culinary gem! The flavors are divine, capturing the essence of the Mediterranean. A must-visit for every food enthusiast!`,
     },
     {
       fullName: 'Antony Clifton',
       image: customer2Image,
       rating: [1, 1, 1, 1, 1],
-      says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      says: `I'm in love with Little Lemon! The food is exquisite, prepared with care and attention to detail. A delightful dining experience.`,
     },
     {
       fullName: 'Tamika Jackson',
       image: customer3Image,
       rating: [1, 1, 1, 1, 0.5],
-      says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      says: `Little Lemon is a hidden treasure. The dishes are bursting with flavor, and the cozy ambiance makes it the perfect spot for a memorable meal.`,
     },
     {
       fullName: 'Brandon Ming',
       image: customer4Image,
       rating: [1, 1, 1, 1],
-      says: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-        eiusmod tempor incididunt ut labore et dolore magna aliqua.`,
+      says: `I can't get enough of Little Lemon! The menu is a delightful blend of traditional and modern Mediterranean cuisine. It's a food lover's paradise!`,
     },
 ];
 
