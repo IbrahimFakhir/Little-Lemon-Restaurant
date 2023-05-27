@@ -9,19 +9,9 @@ export default function About () {
                 <h1>Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-                    culpa qui officia deserunt mollit anim id est laborum. Sed ut 
-                    perspiciatis unde omnis iste natus error sit voluptatem accusantium 
-                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo 
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt 
-                    explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut 
-                    odit aut fugit, sed quia consequuntur magni dolores eos qui ratione 
-                    voluptatem sequi nesciunt.
+                    The story of Little Lemon is a tale of a family's passion for Mediterranean cuisine. It began years ago in a picturesque village along the sun-kissed coast of the Mediterranean. The vibrant Rossi family, renowned for their hospitality and remarkable culinary talent, delighted guests with delicious dishes made from fresh ingredients sourced from nearby markets and farms.
+                    Driven by their love for Mediterranean flavors, the Rossi family decided to share their culinary passion with the world. They opened their own restaurant, affectionately named 'Little Lemon,' as a tribute to the vibrant yellow lemon trees that adorned the village and symbolized the characteristic flavor of Mediterranean cuisine.
+                    Little Lemon quickly gained fame for its extraordinary food and warm hospitality, becoming a gathering place for locals and visitors. Today, it stands as a popular culinary destination, offering authentic Mediterranean cuisine with a modern touch. Discover the story of Little Lemon and join us in celebrating the joy of food and community.
                 </p>
             </div>
             <div className="about-chefs">
