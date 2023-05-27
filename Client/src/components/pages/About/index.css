@@ -1,14 +1,20 @@
-.section-headline {
+.headline {
     background-color: #495E57;
     color: white;
+    margin-bottom: 3rem;
 }
 
-.section-headline h2 {
+.headline h2 {
     padding: 1.875rem 0 1.875rem 0;
     text-align: center;
 }
 
-.about {
+.story-middle {
+    background-color: #495E57;
+    color: white;
+}
+
+.about-content {
     text-align: center;
 }
 
