@@ -5,7 +5,7 @@
 ## Quick Start
 - Start Spring Application (Server)
 - Use "npm install" to install dependencies (Client)
-- Use "npm run" to run the App (Client)
+- Use "npm start" to run the App (Client)
 
 ## Tech Stack
 
