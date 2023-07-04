@@ -1,4 +1,4 @@
-# The Little Lemon Restaurant (work in progress)
+# The Little Lemon Restaurant 
 
 ![Logo Image of Little Lemon Restaurant](/Client/src/components/site-layout/assets/logo.png?raw=true "Optional Title")
 
